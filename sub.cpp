@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #include <add.h>
 #include <sub.h>
+=======
+#include "add.h"
+#include "sub.h"
+>>>>>>> fc309c0 ([ + , - ])
 #include <stdio.h>
 
 int sub(int x, int y)
@@ -7,9 +12,18 @@ int sub(int x, int y)
 	int result = x;
 
 	for(int i = 0; i < y; i++)
+<<<<<<< HEAD
 		{
 			result = add(result -1);
 		}
 	printf("빼기: %d\n", result);
 	return result
+=======
+	{
+		result = add(result, -1);
+	}
+
+	printf("빼기: %d\n",result);
+	return result;
+>>>>>>> fc309c0 ([ + , - ])
 }
